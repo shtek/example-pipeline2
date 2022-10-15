@@ -12,6 +12,13 @@ pipeline {
                 echo "current build ${currentBuild.number}"
                 
             }
+            post{
+                success{
+                    script{
+                       currentBuild.result='FAILURE'
+                    }
+                }
+            }
         }
         
     }
