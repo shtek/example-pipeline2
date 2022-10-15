@@ -9,6 +9,7 @@ pipeline {
                 echo  "${BUILD_URL}" 
                 echo env.JENKINS_URL
                 echo 'hello again'
+                echo "current build ${currentBuild.number}"
                 
             }
         }
