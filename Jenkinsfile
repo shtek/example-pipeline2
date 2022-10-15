@@ -3,8 +3,11 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hello world!' 
+                echo 'Hello world!'
+                input 'type something'
+                echo 'hello again'
             }
         }
+        
     }
 }
