@@ -4,8 +4,9 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!'
-                input 'type something'
+                echo currentBuild.number
                 echo 'hello again'
+                
             }
         }
         
