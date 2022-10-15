@@ -6,7 +6,7 @@ pipeline {
                 echo 'Hello world!'
                
                 echo currentBuild.projectName
-                echo  ${BUILD_URL} 
+                echo  "${BUILD_URL}" 
                 echo 'hello again'
                 
             }
